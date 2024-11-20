@@ -26,7 +26,7 @@ public class TestPeriferice {
         System.out.println("Tastatura 2 compatibila cu Linux: " + t2.verificaCompatibilitate("Linux"));
 
         // Testare clasa Mouse
-        System.out.println("\n=== Testare Mouse ===");
+        System.out.println("\nTestare Mouse ");
         Mouse m1 = new Mouse(); // Constructor fără argumente
         Mouse m2 = new Mouse("Razer", "DeathAdder", 249.99, "Windows, MacOS", 16000, 6, true); // Constructor cu argumente
         Mouse m3 = new Mouse(m2); // Constructor de copiere
@@ -49,7 +49,7 @@ public class TestPeriferice {
         System.out.println("Mouse 2 compatibil cu MacOS: " + m2.verificaCompatibilitate("MacOS"));
 
         // Testare clasa CameraVideo
-        System.out.println("\n=== Testare CameraVideo ===");
+        System.out.println("\nTestare CameraVideo ");
         CameraVideo c1 = new CameraVideo(); // Constructor fără argumente
         CameraVideo c2 = new CameraVideo("Logitech", "C920", 399.99, "Windows, MacOS", 1080, 30, true); // Constructor cu argumente
         CameraVideo c3 = new CameraVideo(c2); // Constructor de copiere
@@ -72,7 +72,7 @@ public class TestPeriferice {
         System.out.println("Camera 2 compatibila cu MacOS: " + c2.verificaCompatibilitate("MacOS"));
 
         // Testare clasa Microfon
-        System.out.println("\n=== Testare Microfon ===");
+        System.out.println("\n Testare Microfon ");
         Microfon mic1 = new Microfon(); // Constructor fără argumente
         Microfon mic2 = new Microfon("Blue", "Yeti", 599.99, "Windows, MacOS", -38, "USB", true); // Constructor cu argumente
         Microfon mic3 = new Microfon(mic2); // Constructor de copiere
