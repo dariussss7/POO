@@ -1,6 +1,6 @@
 package com.mycompany.periferic;
 
-class CameraVideo extends Periferic {
+class CameraVideo extends Periferice {
     private int rezolutie;
     private int rataCadre;
     private boolean areMicrofon;
@@ -56,7 +56,7 @@ class CameraVideo extends Periferic {
 
     @Override
     public String obtineDetalii() {
-        return super.toString() + ", Rezolutie: " + rezolutie + " MP, Rata cadre: " + rataCadre + " FPS, Microfon incorporat: " + areMicrofon;
+        return super.toString() + ", Rezolutie: " + rezolutie + " MP, Rata cadre: " + rataCadre + "FPS, Microfon incorporat: " + areMicrofon;
     }
 
     @Override

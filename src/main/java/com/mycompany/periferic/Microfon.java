@@ -1,6 +1,6 @@
 package com.mycompany.periferic;
 
-class Microfon extends Periferic {
+class Microfon extends Periferice {
     private int sensibilitate;
     private String tipConectare;
     private boolean esteConferinta;

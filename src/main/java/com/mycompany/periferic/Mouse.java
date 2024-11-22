@@ -1,6 +1,6 @@
 package com.mycompany.periferic;
 
-class Mouse extends Periferic {
+class Mouse extends Periferice {
     private int dpi;
     private int numarButoane;
     private boolean wireless;

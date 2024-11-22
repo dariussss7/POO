@@ -1,6 +1,6 @@
 package com.mycompany.periferic;
 
-class Tastatura extends Periferic {
+class Tastatura extends Periferice {
     private String tipLayout;
     private boolean iluminare;
     private String conectivitate;
