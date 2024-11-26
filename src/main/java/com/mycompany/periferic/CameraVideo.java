@@ -64,4 +64,4 @@ class CameraVideo extends Periferice {
         return compatibilitateSO.contains(sistemOperare);
     }
 
-}
+}   

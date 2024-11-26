@@ -16,10 +16,10 @@ class Mouse extends Periferice {
     // Constructor cu toate câmpurile
     public Mouse(String marca, String model, double pret, String compatibilitateSO, int dpi, int numarButoane, boolean wireless) {
         super(marca, model, pret, compatibilitateSO);
-        this.dpi = dpi;
-        this.numarButoane = numarButoane;
-        this.wireless = wireless;
-    }
+            this.dpi = dpi;
+            this.numarButoane = numarButoane;
+            this.wireless = wireless;
+        }
 
     // Constructor de copiere
     public Mouse(Mouse altMouse) {
@@ -63,6 +63,5 @@ class Mouse extends Periferice {
     public boolean verificaCompatibilitate(String sistemOperare) {
         return compatibilitateSO.contains(sistemOperare);
     }
-
-    
+  
 }
