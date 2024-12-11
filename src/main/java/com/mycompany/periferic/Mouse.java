@@ -5,7 +5,7 @@ class Mouse extends Periferice {
     private int numarButoane;
     private boolean wireless;
 
-    // Constructor fără argumente
+    
     public Mouse() {
         super();
         this.dpi = 0;
@@ -13,7 +13,7 @@ class Mouse extends Periferice {
         this.wireless = false;
     }
 
-    // Constructor cu toate câmpurile
+    
     public Mouse(String marca, String model, double pret, String compatibilitateSO, int dpi, int numarButoane, boolean wireless) {
         super(marca, model, pret, compatibilitateSO);
             this.dpi = dpi;
@@ -21,7 +21,7 @@ class Mouse extends Periferice {
             this.wireless = wireless;
         }
 
-    // Constructor de copiere
+   
     public Mouse(Mouse altMouse) {
         super(altMouse);
         this.dpi = altMouse.dpi;
@@ -29,7 +29,7 @@ class Mouse extends Periferice {
         this.wireless = altMouse.wireless;
     }
 
-    // Getter și setter pentru fiecare câmp
+   
     public int getDpi() {
         return dpi;
     }
@@ -58,10 +58,15 @@ class Mouse extends Periferice {
     public String obtineDetalii() {
         return super.toString() + ", DPI: " + dpi + ", Numar Butoane: " + numarButoane + ", Wireless: " + wireless;
     }
+    
 
     @Override
     public boolean verificaCompatibilitate(String sistemOperare) {
         return compatibilitateSO.contains(sistemOperare);
     }
-  
+    @Override
+    public String toString(){
+        return obtineDetalii();
+    }
+
 }

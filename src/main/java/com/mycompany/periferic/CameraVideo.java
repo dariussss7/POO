@@ -5,7 +5,7 @@ class CameraVideo extends Periferice {
     private int rataCadre;
     private boolean areMicrofon;
 
-    // Constructor fără argumente
+    
     public CameraVideo() {
         super();
         this.rezolutie = 0;
@@ -13,7 +13,7 @@ class CameraVideo extends Periferice {
         this.areMicrofon = false;
     }
 
-    // Constructor cu toate câmpurile
+    
     public CameraVideo(String marca, String model, double pret, String compatibilitateSO, int rezolutie, int rataCadre, boolean areMicrofon) {
         super(marca, model, pret, compatibilitateSO);
         this.rezolutie = rezolutie;
@@ -21,7 +21,7 @@ class CameraVideo extends Periferice {
         this.areMicrofon = areMicrofon;
     }
 
-    // Constructor de copiere
+    
     public CameraVideo(CameraVideo altaCamera) {
         super(altaCamera);
         this.rezolutie = altaCamera.rezolutie;
@@ -29,7 +29,7 @@ class CameraVideo extends Periferice {
         this.areMicrofon = altaCamera.areMicrofon;
     }
 
-    // Getter și setter pentru fiecare câmp
+    
     public int getRezolutie() {
         return rezolutie;
     }
@@ -64,4 +64,11 @@ class CameraVideo extends Periferice {
         return compatibilitateSO.contains(sistemOperare);
     }
 
+    public boolean haveMicrofonn(){
+        return this.areMicrofon;
+    }
+    @Override
+    public String toString(){
+        return obtineDetalii();
+    }
 }   

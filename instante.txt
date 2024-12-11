@@ -1,0 +1,5 @@
+Marca: HP, Model: Omen, Pret: 299.99 RON, Compatibilitate: Windows, Layout: QWERTZ, Iluminare: false, Conectivitate: USB
+Marca: Dell, Model: KB216, Pret: 79.99 RON, Compatibilitate: Windows, Layout: QWERTY, Iluminare: false, Conectivitate: USB
+Marca: Microsoft, Model: Ergonomic, Pret: 199.99 RON, Compatibilitate: Windows, Layout: QWERTY, Iluminare: false, Conectivitate: Wireless
+Marca: Lenovo, Model: ThinkPad, Pret: 199.99 RON, Compatibilitate: Windows, Layout: QWERTY, Iluminare: false, Conectivitate: USB
+

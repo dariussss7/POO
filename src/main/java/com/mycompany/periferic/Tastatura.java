@@ -5,7 +5,7 @@ class Tastatura extends Periferice {
     private boolean iluminare;
     private String conectivitate;
 
-    // Constructor fără argumente
+    
     public Tastatura() {
         super();
         this.tipLayout = "Necunoscut";
@@ -13,7 +13,7 @@ class Tastatura extends Periferice {
         this.conectivitate = "Necunoscut";
     }
 
-    // Constructor cu toate câmpurile
+   
     public Tastatura(String marca, String model, double pret, String compatibilitateSO, String tipLayout, boolean iluminare, String conectivitate) {
         super(marca, model, pret, compatibilitateSO);
         this.tipLayout = tipLayout;
@@ -21,7 +21,7 @@ class Tastatura extends Periferice {
         this.conectivitate = conectivitate;
     }
 
-    // Constructor de copiere
+   
     public Tastatura(Tastatura altaTastatura) {
         super(altaTastatura);
         this.tipLayout = altaTastatura.tipLayout;
@@ -29,7 +29,7 @@ class Tastatura extends Periferice {
         this.conectivitate = altaTastatura.conectivitate;
     }
 
-    // Getter și setter pentru fiecare câmp
+    
     public String getTipLayout() {
         return tipLayout;
     }
@@ -58,10 +58,17 @@ class Tastatura extends Periferice {
     public String obtineDetalii() {
         return super.toString() + ", Layout: " + tipLayout + ", Iluminare: " + iluminare + ", Conectivitate: " + conectivitate;
     }
-
+            
     @Override
     public boolean verificaCompatibilitate(String sistemOperare) {
         return compatibilitateSO.contains(sistemOperare);
     }
+    
+    @Override
+    
+    public String toString(){
+        return obtineDetalii();
+    }
+    
 
 }

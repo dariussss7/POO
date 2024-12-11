@@ -5,7 +5,7 @@ class Microfon extends Periferice {
     private String tipConectare;
     private boolean esteConferinta;
 
-    // Constructor fără argumente
+    
     public Microfon() {
         super();
         this.sensibilitate = 0;
@@ -13,7 +13,7 @@ class Microfon extends Periferice {
         this.esteConferinta = false;
     }
 
-    // Constructor cu toate câmpurile
+    
     public Microfon(String marca, String model, double pret, String compatibilitateSO, int sensibilitate, String tipConectare, boolean esteConferinta) {
         super(marca, model, pret, compatibilitateSO);
         this.sensibilitate = sensibilitate;
@@ -21,7 +21,7 @@ class Microfon extends Periferice {
         this.esteConferinta = esteConferinta;
     }
 
-    // Constructor de copiere
+    
     public Microfon(Microfon altMicrofon) {
         super(altMicrofon);
         this.sensibilitate = altMicrofon.sensibilitate;
@@ -29,7 +29,7 @@ class Microfon extends Periferice {
         this.esteConferinta = altMicrofon.esteConferinta;
     }
 
-    // Getter și setter pentru fiecare câmp
+    
     public int getSensibilitate() {
         return sensibilitate;
     }
@@ -64,5 +64,12 @@ class Microfon extends Periferice {
         return compatibilitateSO.contains(sistemOperare);
     }
 
+   public boolean isConferinta(){
+       return this.esteConferinta;
+   }
+   @Override
+    public String toString(){
+        return obtineDetalii();
+    }
 
 }

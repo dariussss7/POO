@@ -7,7 +7,7 @@ public class Periferice extends Periferic{
     protected double pret;
     protected String compatibilitateSO;
 
-    // Constructor fara argumente
+    
     public Periferice() {
         this.marca = "Necunoscut";
         this.model = "Necunoscut";
@@ -15,7 +15,7 @@ public class Periferice extends Periferic{
         this.compatibilitateSO = "Necunoscut";
     }
 
-    // Constructor cu toate campurile
+   
     public Periferice(String marca, String model, double pret, String compatibilitateSO) {
         this.marca = marca;
         this.model = model;
@@ -23,7 +23,7 @@ public class Periferice extends Periferic{
         this.compatibilitateSO = compatibilitateSO;
     }
 
-    // Constructor de copiere
+    
     public Periferice(Periferice altPeriferic) {
         this.marca = altPeriferic.marca;
         this.model = altPeriferic.model;
@@ -31,7 +31,7 @@ public class Periferice extends Periferic{
         this.compatibilitateSO = altPeriferic.compatibilitateSO;
     }
 
-    // Getter și setter pentru fiecare câmp
+    
     public String getMarca() {
         return marca;
     }
